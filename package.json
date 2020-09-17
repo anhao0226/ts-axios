@@ -12,7 +12,7 @@
   "author": "hangiangai <2919099739@qq.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anhao0226/ts-axios.git"
+    "url": "https://github.com/anhao0226/ts-axios"
   },
   "license": "MIT",
   "engines": {
