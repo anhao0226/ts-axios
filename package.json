@@ -1,18 +1,18 @@
 {
-  "name": "ts-axios",
-  "version": "0.0.0",
+  "name": "i-ts-axios",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "main": "/home/hangiangai/Desktop/vue.3.0/api-doc/src/libs/axios/ts-axios.umd.js",
-  "module": "/home/hangiangai/Desktop/vue.3.0/api-doc/src/libs/axios/ts-axios.es5.js",
-  "typings": "/home/hangiangai/Desktop/vue.3.0/api-doc/src/libs/axios/types/ts-axios.d.ts",
+  "main": "dist/axios/axios.umd.js",
+  "module": "dist/axios/axios.es5.js",
+  "typings": "dist/types/index.d.ts",
   "files": [
-    "/home/hangiangai/Desktop/vue.3.0/api-doc/src/libs/axios/"
+    "dist"
   ],
   "author": "hangiangai <2919099739@qq.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/anhao0226/ts-axios.git"
   },
   "license": "MIT",
   "engines": {
@@ -32,7 +32,9 @@
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "prepub": "npm run build",
+    "pub": "bash release.sh"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
