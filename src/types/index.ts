@@ -11,6 +11,8 @@ export type Method =
   | 'PATCH'
   | 'OPTION'
   | 'option'
+  | 'HEADER'
+  | 'header'
 
 export interface AxiosRequestConfig {
   url?: string
